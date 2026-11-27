@@ -1,17 +1,33 @@
+# 以 LLVM 风格为基础。
 BasedOnStyle: LLVM
+# 每级缩进占 4 列。
 IndentWidth: 4
+# 续行缩进宽度为 4 列。
 ContinuationIndentWidth: 4
+# 每隔 4 列设置一个制表位。
 TabWidth: 4
+# 使用空格缩进和对齐。
 UseTab: Never
+# 行宽目标为 100 列。
 ColumnLimit: 100
 
-BreakBeforeBraces: Attach
+# 采用 Allman 风格，代码块的左大括号另起一行。
+BreakBeforeBraces: Allman
+# 访问说明符比类成员少缩进 4 列。
 AccessModifierOffset: -4
-IndentCaseLabels: true
+# case 和 default 标签与 switch 对齐。
+IndentCaseLabels: false
 
-AllowShortFunctionsOnASingleLine: Empty
+# 短函数体展开为多行，包括空函数体。
+AllowShortFunctionsOnASingleLine: None
+# 短 if 语句的条件和语句体分行。
 AllowShortIfStatementsOnASingleLine: Never
+# 短循环体分行排版。
 AllowShortLoopsOnASingleLine: false
+# 短枚举定义展开为多行。
+AllowShortEnumsOnASingleLine: false
 
+# 使用下方的 PointerAlignment 设置指针对齐。
 DerivePointerAlignment: false
-PointerAlignment: Left
+# 指针星号靠近变量名，例如 int *ptr。
+PointerAlignment: Right
